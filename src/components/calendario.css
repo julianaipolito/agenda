@@ -1,0 +1,145 @@
+body {
+    margin: 0; 
+    background-color: #8C8FC5;
+    color: white;
+}
+
+.calendario-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #66BCF2;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: auto;
+}
+
+.calendario-layout {
+    display: flex;
+    width: 100%;
+}
+
+.calendar {
+    flex: 2;
+    padding: 0;
+}
+
+.event-meeting-container {
+    flex: 1;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.react-calendar {
+    border: none;
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #D3E8F5;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%;
+}
+
+.react-calendar__tile--active {
+    background: #8e7cba; 
+    color: white;
+}
+
+.react-calendar__tile--now {
+    background: #734bd8; 
+    color: white;
+}
+
+.react-calendar__tile--neighboringMonth {
+    color: white; 
+}
+
+.react-calendar__tile {
+    transition: background 0.3s;
+}
+
+.react-calendar__tile:hover {
+    background: #8e7cba; 
+}
+
+.selected-date {
+    margin-top: 0;
+    background-color: #D3E8F5;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.selected-date h3 {
+    font-size: 18px;
+    color: #1e1c1d;
+    margin-bottom: 12px;
+}
+
+.selected-date input,
+.selected-date button {
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+}
+
+.selected-date button {
+    background-color: #72ADD8;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.selected-date button:hover {
+    background-color: #D3E8F5;
+}
+
+.event-list {
+    margin-top: 15px;
+    background-color: #D3E8F5;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-list h3 {
+    color: #1b1719;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.event-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-list ul li {
+    background-color: #b6bbff;
+    margin-bottom: 8px;
+    padding: 6px;
+    border-radius: 5px;
+    color: #2f4f4f;
+    text-align: center;
+}
+
+.calendar, .event-meeting-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.holiday {
+    background-color: #fdda16; 
+    color: white;
+  }
+  
+  .react-calendar__month-view__weekdays__weekday {
+    color: black; 
+  }
+  
